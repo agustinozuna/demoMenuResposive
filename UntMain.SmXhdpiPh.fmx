@@ -1,0 +1,71 @@
+inherited frmMain_SmXhdpiPh: TfrmMain_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited layout_principal: TLayout
+    Size.Width = 250.000000000000000000
+    inherited Rectangle1: TRectangle
+      Size.Width = 250.000000000000000000
+      inherited Layout1: TLayout
+        Size.Width = 250.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 250.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited img_menu: TImage
+          MultiResBitmap.Height = 18
+          MultiResBitmap.Width = 22
+        end
+      end
+    end
+  end
+  inherited rect_backgroundOpacity: TRectangle
+    Size.Width = 250.000000000000000000
+    Size.Height = 375.000000000000000000
+  end
+  inherited rect_menu: TRectangle
+    Size.Width = 174.751251220703100000
+    Size.Height = 375.000000000000000000
+    inherited AnimationMenu: TFloatAnimation
+      OnProcess = nil
+    end
+    inherited Layout5: TLayout
+      Size.Width = 174.751251220703100000
+      Size.Height = 375.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 174.751251220703100000
+        inherited Layout4: TLayout
+          Size.Width = 124.751251220703100000
+          inherited Label3: TLabel
+            Size.Width = 120.751251220703100000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited SpeedButton2: TSpeedButton
+          Size.Width = 174.751251220703100000
+        end
+      end
+      inherited lytExit: TLayout
+        Position.Y = 323.000000000000000000
+        Size.Width = 174.751251220703100000
+        inherited lytTextExit: TLayout
+          Size.Width = 124.751251220703100000
+          inherited lblExit: TLabel
+            Size.Width = 120.751251220703100000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited speLogoff: TSpeedButton
+          Size.Width = 174.751251220703100000
+          OnClick = nil
+        end
+      end
+      inherited Rectangle4: TRectangle
+        Size.Width = 174.751251220703100000
+        inherited Label2: TLabel
+          Size.Width = 164.751251220703100000
+        end
+      end
+    end
+  end
+end

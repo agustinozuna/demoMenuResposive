@@ -1,0 +1,44 @@
+inherited frmMain_Macintosh: TfrmMain_Macintosh
+  DesignerMasterStyle = 3
+  inherited layout_principal: TLayout
+    inherited Rectangle1: TRectangle
+      inherited Layout1: TLayout
+        inherited Label1: TLabel
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited img_menu: TImage
+          MultiResBitmap.Height = 18
+          MultiResBitmap.Width = 22
+        end
+      end
+    end
+  end
+  inherited rect_menu: TRectangle
+    inherited AnimationMenu: TFloatAnimation
+      OnProcess = nil
+    end
+    inherited Layout5: TLayout
+      inherited Layout2: TLayout
+        inherited Layout4: TLayout
+          inherited Label3: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited SpeedButton2: TSpeedButton
+          Size.Height = 52.000000000000000000
+        end
+      end
+      inherited lytExit: TLayout
+        inherited lytTextExit: TLayout
+          inherited lblExit: TLabel
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited speLogoff: TSpeedButton
+          Size.Height = 52.000000000000000000
+          OnClick = nil
+        end
+      end
+    end
+  end
+end

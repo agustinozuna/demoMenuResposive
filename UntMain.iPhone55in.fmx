@@ -1,0 +1,73 @@
+inherited frmMain_iPhone55in: TfrmMain_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 3
+  inherited layout_principal: TLayout
+    Size.Width = 414.000000000000000000
+    inherited Rectangle1: TRectangle
+      Size.Width = 414.000000000000000000
+      inherited Layout1: TLayout
+        Size.Width = 414.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 414.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+        end
+        inherited img_menu: TImage
+          MultiResBitmap.Height = 18
+          MultiResBitmap.Width = 22
+        end
+      end
+    end
+  end
+  inherited rect_backgroundOpacity: TRectangle
+    Size.Width = 414.000000000000000000
+    Size.Height = 716.000000000000000000
+  end
+  inherited rect_menu: TRectangle
+    Size.Width = 333.658325195312500000
+    Size.Height = 716.000000000000000000
+    inherited AnimationMenu: TFloatAnimation
+      OnProcess = nil
+    end
+    inherited Layout5: TLayout
+      Size.Width = 333.658325195312500000
+      Size.Height = 716.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 333.658325195312500000
+        inherited Layout4: TLayout
+          Size.Width = 283.658325195312500000
+          inherited Label3: TLabel
+            Size.Width = 279.658325195312500000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited SpeedButton2: TSpeedButton
+          Size.Width = 333.658325195312500000
+          Size.Height = 44.000000000000000000
+        end
+      end
+      inherited lytExit: TLayout
+        Position.Y = 664.000000000000000000
+        Size.Width = 333.658325195312500000
+        inherited lytTextExit: TLayout
+          Size.Width = 283.658325195312500000
+          inherited lblExit: TLabel
+            Size.Width = 279.658325195312500000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+        end
+        inherited speLogoff: TSpeedButton
+          Size.Width = 333.658325195312500000
+          Size.Height = 44.000000000000000000
+          OnClick = nil
+        end
+      end
+      inherited Rectangle4: TRectangle
+        Size.Width = 333.658325195312500000
+        inherited Label2: TLabel
+          Size.Width = 323.658325195312500000
+        end
+      end
+    end
+  end
+end
