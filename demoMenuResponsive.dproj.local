@@ -2,15 +2,15 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2021/10/22 20:19:46.000.513,=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2021/10/22 20:20:21.000.945,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.fmx</Transaction>
-    <Transaction>2021/10/22 20:20:21.000.945,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.pas</Transaction>
-    <Transaction>2021/10/22 20:20:43.000.551,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoLaboratorio.dproj</Transaction>
-    <Transaction>2021/10/22 22:39:57.000.299,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.pas=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\UntMain.pas</Transaction>
-    <Transaction>2021/10/22 22:39:57.000.299,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.fmx=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\UntMain.fmx</Transaction>
-    <Transaction>2021/10/23 03:53:37.412,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoMenuResponsive.dproj=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoLaboratorio.dproj</Transaction>
+    <Transaction>2021/10/22 20:20:21.000.945,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.fmx=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2021/10/22 20:20:21.000.945,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.pas=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/22 20:20:43.000.551,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoLaboratorio.dproj=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/10/22 22:39:57.000.299,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\UntMain.pas=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.pas</Transaction>
+    <Transaction>2021/10/22 22:39:57.000.299,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\UntMain.fmx=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\Unit1.fmx</Transaction>
+    <Transaction>2021/10/23 03:53:37.000.412,C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoLaboratorio.dproj=C:\Users\NITRO 5\Documents\Embarcadero\Studio\Projects\demoLaboratorio\demoMenuResponsive.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<POzuna iOSSimulator="iPhone5"/>
-		<NoProfile Android64="GVY4C17810002631" Android="GVY4C17810002631"/>
+		<NoProfile Android64="" Android="" iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 </BorlandProject>

@@ -69,7 +69,6 @@ object frmMain: TfrmMain
           Size.Width = 30.000000000000000000
           Size.Height = 29.000000000000000000
           Size.PlatformDefault = False
-          OnClick = img_menuClick
         end
       end
     end
@@ -81,244 +80,251 @@ object frmMain: TfrmMain
       ShadowColor = claBlack
     end
   end
-  object rect_backgroundOpacity: TRectangle
+  object lytMenu: TLayout
     Align = Contents
-    Fill.Color = xFF0F0F0F
-    Opacity = 0.400000005960464500
     Size.Width = 440.000000000000000000
     Size.Height = 652.000000000000000000
     Size.PlatformDefault = False
-    Stroke.Kind = None
-    Visible = False
-    OnClick = rect_backgroundOpacityClick
-  end
-  object rect_menu: TRectangle
-    Align = FitLeft
-    Fill.Color = xFF757575
-    Size.Width = 281.000000000000000000
-    Size.Height = 652.000000000000000000
-    Size.PlatformDefault = False
-    Stroke.Kind = None
-    Visible = False
-    object AnimationMenu: TFloatAnimation
-      AnimationType = InOut
-      Duration = 0.500000000000000000
-      Interpolation = Circular
-      OnFinish = AnimationMenuFinish
-      PropertyName = 'Width'
-      StartValue = 0.000000000000000000
-      StopValue = 260.000000000000000000
-    end
-    object Layout5: TLayout
-      Align = Contents
-      Size.Width = 281.000000000000000000
+    TabOrder = 1
+    object mtvMenu: TMultiView
+      DrawerOptions.TouchAreaSize = 15.000000000000000000
+      PopoverOptions.StyleLookup = '#FFf9f9f9'
+      PopoverOptions.PopupHeight = 220.000000000000000000
+      MasterButton = img_menu
+      Mode = Drawer
+      NavigationPaneOptions.CollapsedWidth = 48.000000000000000000
+      Size.Width = 250.000000000000000000
       Size.Height = 652.000000000000000000
       Size.PlatformDefault = False
-      TabOrder = 1
-      object Layout2: TLayout
-        Align = Top
-        ClipChildren = True
-        Margins.Top = 10.000000000000000000
-        Position.Y = 139.000000000000000000
-        Size.Width = 281.000000000000000000
-        Size.Height = 52.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        object Layout3: TLayout
-          Align = Left
-          Size.Width = 50.000000000000000000
-          Size.Height = 52.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          object Path1: TPath
-            Data.Path = {
-              2C00000000000000A245B7410000000002000000C52024410000000002000000
-              00000000AC1C244102000000000000009643B7410200000000000000713D0E42
-              02000000C5202441A245374202000000A245B741A245374202000000713D0E42
-              A245374202000000A2453742713D0E4202000000A24537429643B74102000000
-              A2453742AC1C244102000000773E0E420000000002000000A245B74100000000
-              03000000A245B7410000000000000000BA49D34102AB0D4202000000BA49D341
-              1D5A15420200000039B4C6417B941B42020000001C5AB7417B941B4202000000
-              F3FDA7417B941B42020000007E6A9B411D5A1542020000007E6A9B4102AB0D42
-              010000007E6A9B41A69BA141020000007E6A9B417D3F924102000000F3FDA741
-              C1CA8541020000001C5AB741C1CA85410200000039B4C641C1CA854102000000
-              BA49D341713D924102000000BA49D341A69BA14101000000BA49D34102AB0D42
-              03000000BA49D34102AB0D4200000000A245B741B29D5D4102000000EC51A641
-              B29D5D410200000075939841C42042410200000075939841703D204102000000
-              75939841D6A3FC4002000000EC51A6415DBAC54002000000A245B7415DBAC540
-              020000004C37C8415DBAC54002000000CFF7D541D6A3FC4002000000CFF7D541
-              703D204102000000CFF7D541C5204241020000004C37C841B29D5D4102000000
-              A245B741B29D5D4103000000A245B741B29D5D41}
-            Fill.Color = claWhite
-            Margins.Left = 15.000000000000000000
-            Margins.Top = 12.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Margins.Bottom = 12.000000000000000000
-            Position.X = 15.000000000000000000
-            Position.Y = 12.000000000000000000
-            Size.Width = 28.000000000000000000
-            Size.Height = 27.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-          end
-        end
-        object Layout4: TLayout
-          Align = Client
-          Size.Width = 231.000000000000000000
-          Size.Height = 52.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          object Label3: TLabel
-            Align = Client
-            StyledSettings = [Family]
-            Margins.Left = 4.000000000000000000
-            Size.Width = 227.000000000000000000
-            Size.Height = 52.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.Font.Size = 20.000000000000000000
-            TextSettings.Font.StyleExt = {00070000000000000004000000}
-            TextSettings.FontColor = claWhite
-            TextSettings.HorzAlign = Center
-            Text = 'Example'
-            TabOrder = 0
-          end
-        end
-        object SpeedButton2: TSpeedButton
-          Align = Contents
-          Size.Width = 281.000000000000000000
-          Size.Height = 48.000000000000000000
-          Size.PlatformDefault = False
-        end
-      end
-      object lytExit: TLayout
-        Align = MostBottom
-        Position.Y = 600.000000000000000000
-        Size.Width = 281.000000000000000000
-        Size.Height = 52.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 1
-        object lytIcoExit: TLayout
-          Align = Left
-          Size.Width = 50.000000000000000000
-          Size.Height = 52.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          object pthIcoExit: TPath
-            Data.Path = {
-              2200000000000000000080410000884101000000000080410000604101000000
-              0000104100006041010000000000104100002041010000000000804100002041
-              01000000000080410000E040010000000000A841000040410100000000008041
-              000088410000000000006041000000400200000051AC71410000004002000000
-              00008041BC4E394002000000000080410000804001000000000080410000C040
-              01000000000060410000C040010000000000604100008040010000000000A040
-              00008040010000000000A0400000A04101000000000060410000A04101000000
-              000060410000904101000000000080410000904101000000000080410000A041
-              020000000000804129D6A8410200000051AC71410000B0410200000000006041
-              0000B041010000000000A0400000B04102000000BC4E79400000B04102000000
-              0000404029D6A84102000000000040400000A041010000000000404000008040
-              0200000001004040BA4E394002000000BD4E7940FEFFFF3F020000000100A040
-              00000040010000000000604100000040030000000000604100000040}
-            Fill.Color = claWhite
-            Margins.Left = 15.000000000000000000
-            Margins.Top = 12.000000000000000000
-            Margins.Right = 15.000000000000000000
-            Margins.Bottom = 12.000000000000000000
-            Position.X = 15.000000000000000000
-            Position.Y = 12.000000000000000000
-            Size.Width = 28.000000000000000000
-            Size.Height = 27.000000000000000000
-            Size.PlatformDefault = False
-            Stroke.Kind = None
-          end
-        end
-        object lytTextExit: TLayout
-          Align = Client
-          Size.Width = 231.000000000000000000
-          Size.Height = 52.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          object lblExit: TLabel
-            Align = Client
-            StyledSettings = [Family]
-            Margins.Left = 4.000000000000000000
-            Size.Width = 227.000000000000000000
-            Size.Height = 52.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.Font.Size = 20.000000000000000000
-            TextSettings.Font.StyleExt = {00070000000000000004000000}
-            TextSettings.FontColor = claWhite
-            TextSettings.HorzAlign = Center
-            Text = 'Exit'
-            TabOrder = 0
-          end
-        end
-        object speLogoff: TSpeedButton
-          Align = Contents
-          Size.Width = 281.000000000000000000
-          Size.Height = 48.000000000000000000
-          Size.PlatformDefault = False
-        end
-      end
-      object Rectangle4: TRectangle
-        Align = Top
-        ClipChildren = True
-        Corners = [BottomLeft, BottomRight]
-        Fill.Color = xFFA5D6A7
-        Size.Width = 281.000000000000000000
-        Size.Height = 129.000000000000000000
+      Visible = False
+      TabOrder = 0
+      object rect_menu: TRectangle
+        Align = Contents
+        Fill.Color = xFF757575
+        Size.Width = 250.000000000000000000
+        Size.Height = 652.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
-        XRadius = 26.000000000000000000
-        YRadius = 26.000000000000000000
-        object Label2: TLabel
-          Align = Client
-          Margins.Left = 10.000000000000000000
-          Size.Width = 271.000000000000000000
-          Size.Height = 129.000000000000000000
-          Size.PlatformDefault = False
-          StyleLookup = 'toollabel'
-          Text = 'Master'
-          TabOrder = 0
+        object AnimationMenu: TFloatAnimation
+          AnimationType = InOut
+          Duration = 0.500000000000000000
+          Interpolation = Circular
+          PropertyName = 'Width'
+          StartValue = 0.000000000000000000
+          StopValue = 260.000000000000000000
         end
-        object SpeedButton1: TSpeedButton
-          Align = Left
-          ModalResult = 5
-          Margins.Left = 5.000000000000000000
-          Margins.Top = 5.000000000000000000
-          Margins.Right = 5.000000000000000000
-          Margins.Bottom = 5.000000000000000000
-          Position.X = 2.000000000000000000
-          Position.Y = 2.000000000000000000
-          Size.Width = 48.000000000000000000
-          Size.Height = 48.000000000000000000
+        object Layout5: TLayout
+          Align = Contents
+          Size.Width = 250.000000000000000000
+          Size.Height = 652.000000000000000000
           Size.PlatformDefault = False
-          StyleLookup = 'detailstoolbutton'
-          Visible = False
-        end
-        object Circle3: TCircle
-          Fill.Color = xFFC3ECBD
-          Position.X = 89.000000000000000000
-          Position.Y = -48.000000000000000000
-          Size.Width = 193.000000000000000000
-          Size.Height = 209.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-        end
-        object Circle4: TCircle
-          Fill.Color = xFFD7F4C1
-          Position.X = 120.000000000000000000
-          Position.Y = -48.000000000000000000
-          Size.Width = 289.000000000000000000
-          Size.Height = 209.000000000000000000
-          Size.PlatformDefault = False
-          Stroke.Kind = None
-        end
-        object ShadowEffect1: TShadowEffect
-          Distance = 3.000000000000000000
-          Direction = 180.000000000000000000
-          Softness = 0.300000011920929000
-          Opacity = 0.600000023841857900
-          ShadowColor = claBlack
+          TabOrder = 1
+          object Layout2: TLayout
+            Align = Top
+            ClipChildren = True
+            Margins.Top = 10.000000000000000000
+            Position.Y = 139.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout3: TLayout
+              Align = Left
+              Size.Width = 50.000000000000000000
+              Size.Height = 52.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Path1: TPath
+                Data.Path = {
+                  2C00000000000000A245B7410000000002000000C52024410000000002000000
+                  00000000AC1C244102000000000000009643B7410200000000000000713D0E42
+                  02000000C5202441A245374202000000A245B741A245374202000000713D0E42
+                  A245374202000000A2453742713D0E4202000000A24537429643B74102000000
+                  A2453742AC1C244102000000773E0E420000000002000000A245B74100000000
+                  03000000A245B7410000000000000000BA49D34102AB0D4202000000BA49D341
+                  1D5A15420200000039B4C6417B941B42020000001C5AB7417B941B4202000000
+                  F3FDA7417B941B42020000007E6A9B411D5A1542020000007E6A9B4102AB0D42
+                  010000007E6A9B41A69BA141020000007E6A9B417D3F924102000000F3FDA741
+                  C1CA8541020000001C5AB741C1CA85410200000039B4C641C1CA854102000000
+                  BA49D341713D924102000000BA49D341A69BA14101000000BA49D34102AB0D42
+                  03000000BA49D34102AB0D4200000000A245B741B29D5D4102000000EC51A641
+                  B29D5D410200000075939841C42042410200000075939841703D204102000000
+                  75939841D6A3FC4002000000EC51A6415DBAC54002000000A245B7415DBAC540
+                  020000004C37C8415DBAC54002000000CFF7D541D6A3FC4002000000CFF7D541
+                  703D204102000000CFF7D541C5204241020000004C37C841B29D5D4102000000
+                  A245B741B29D5D4103000000A245B741B29D5D41}
+                Fill.Color = claWhite
+                Margins.Left = 15.000000000000000000
+                Margins.Top = 12.000000000000000000
+                Margins.Right = 15.000000000000000000
+                Margins.Bottom = 12.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 12.000000000000000000
+                Size.Width = 28.000000000000000000
+                Size.Height = 27.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+              end
+            end
+            object Layout4: TLayout
+              Align = Client
+              Size.Width = 200.000000000000000000
+              Size.Height = 52.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Label3: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Margins.Left = 4.000000000000000000
+                Size.Width = 196.000000000000000000
+                Size.Height = 52.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Example'
+                TabOrder = 0
+              end
+            end
+            object SpeedButton2: TSpeedButton
+              Align = Contents
+              Size.Width = 250.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object lytExit: TLayout
+            Align = MostBottom
+            Position.Y = 600.000000000000000000
+            Size.Width = 250.000000000000000000
+            Size.Height = 52.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lytIcoExit: TLayout
+              Align = Left
+              Size.Width = 50.000000000000000000
+              Size.Height = 52.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object pthIcoExit: TPath
+                Data.Path = {
+                  2200000000000000000080410000884101000000000080410000604101000000
+                  0000104100006041010000000000104100002041010000000000804100002041
+                  01000000000080410000E040010000000000A841000040410100000000008041
+                  000088410000000000006041000000400200000051AC71410000004002000000
+                  00008041BC4E394002000000000080410000804001000000000080410000C040
+                  01000000000060410000C040010000000000604100008040010000000000A040
+                  00008040010000000000A0400000A04101000000000060410000A04101000000
+                  000060410000904101000000000080410000904101000000000080410000A041
+                  020000000000804129D6A8410200000051AC71410000B0410200000000006041
+                  0000B041010000000000A0400000B04102000000BC4E79400000B04102000000
+                  0000404029D6A84102000000000040400000A041010000000000404000008040
+                  0200000001004040BA4E394002000000BD4E7940FEFFFF3F020000000100A040
+                  00000040010000000000604100000040030000000000604100000040}
+                Fill.Color = claWhite
+                Margins.Left = 15.000000000000000000
+                Margins.Top = 12.000000000000000000
+                Margins.Right = 15.000000000000000000
+                Margins.Bottom = 12.000000000000000000
+                Position.X = 15.000000000000000000
+                Position.Y = 12.000000000000000000
+                Size.Width = 28.000000000000000000
+                Size.Height = 27.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+              end
+            end
+            object lytTextExit: TLayout
+              Align = Client
+              Size.Width = 200.000000000000000000
+              Size.Height = 52.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lblExit: TLabel
+                Align = Client
+                StyledSettings = [Family]
+                Margins.Left = 4.000000000000000000
+                Size.Width = 196.000000000000000000
+                Size.Height = 52.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.HorzAlign = Center
+                Text = 'Exit'
+                TabOrder = 0
+              end
+            end
+            object speLogoff: TSpeedButton
+              Align = Contents
+              Size.Width = 250.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Rectangle4: TRectangle
+            Align = Top
+            ClipChildren = True
+            Corners = [BottomLeft, BottomRight]
+            Fill.Color = xFFA5D6A7
+            Size.Width = 250.000000000000000000
+            Size.Height = 129.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            XRadius = 26.000000000000000000
+            YRadius = 26.000000000000000000
+            object Label2: TLabel
+              Align = Client
+              Margins.Left = 10.000000000000000000
+              Size.Width = 240.000000000000000000
+              Size.Height = 129.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              Text = 'Master'
+              TabOrder = 0
+            end
+            object SpeedButton1: TSpeedButton
+              Align = Left
+              ModalResult = 5
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Position.X = 2.000000000000000000
+              Position.Y = 2.000000000000000000
+              Size.Width = 48.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'detailstoolbutton'
+              Visible = False
+            end
+            object Circle3: TCircle
+              Fill.Color = xFFC3ECBD
+              Position.X = 89.000000000000000000
+              Position.Y = -48.000000000000000000
+              Size.Width = 193.000000000000000000
+              Size.Height = 209.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+            end
+            object Circle4: TCircle
+              Fill.Color = xFFD7F4C1
+              Position.X = 120.000000000000000000
+              Position.Y = -48.000000000000000000
+              Size.Width = 289.000000000000000000
+              Size.Height = 209.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+            end
+            object ShadowEffect1: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 180.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+            end
+          end
         end
       end
     end
