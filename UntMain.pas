@@ -19,7 +19,6 @@ type
     img_menu: TImage;
     ShadowEffect2: TShadowEffect;
     mtvMenu: TMultiView;
-    lytMenu: TLayout;
     rect_menu: TRectangle;
     AnimationMenu: TFloatAnimation;
     Layout5: TLayout;
@@ -41,6 +40,7 @@ type
     Circle3: TCircle;
     Circle4: TCircle;
     ShadowEffect1: TShadowEffect;
+    lytCont: TLayout;
     procedure FormResize(Sender: TObject);
   private
     { Private declarations }
